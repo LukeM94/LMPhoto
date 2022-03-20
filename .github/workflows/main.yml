@@ -29,5 +29,8 @@ jobs:
       - uses: microsoft/playwright-github-action@v1
 
       - name: Install dependencies and run tests
-        run: pip install --upgrade pip && pip install playwright && playwright install && python3 screenshotScript.py
+        run: pip install --upgrade pip && pip install playwright && playwright install
+        
+      - name: Run Tests
+        run:  python3 screenshotScript.py
 
